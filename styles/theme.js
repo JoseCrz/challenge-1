@@ -7,5 +7,6 @@ export const theme = {
     black: '#0D1C0B',
     white: '#FDFEFC'
   },
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512]
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  fontSizes: [0, 12, 14, 16, 20, 24, 32]
 }
