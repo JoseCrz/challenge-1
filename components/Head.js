@@ -4,7 +4,7 @@ import { GoogleFonts } from 'next-google-fonts'
 export const Head = ({ children }) => {
   return (
     <>
-      <GoogleFonts href='https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;500&display=swap' />
+      <GoogleFonts href='https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap' />
       <NextHead>
         <meta charSet='UTF-8' />
         <meta
