@@ -4,7 +4,7 @@ import { SiOverleaf } from 'react-icons/si'
 const StyledHeader = styled.header`
   display: flex;
   align-items: center;
-  margin: ${({ theme }) => `${theme.space[4]}px ${theme.space[3]}px`};
+  margin: ${({ theme }) => `${theme.space[3]}`};
 `
 
 const Logo = styled(SiOverleaf)`
@@ -17,7 +17,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   text-transform: uppercase;
-  margin-left: ${({ theme }) => theme.space[4]}px;
+  margin-left: ${({ theme }) => theme.space[4]};
 `
 
 export const Header = () => {
