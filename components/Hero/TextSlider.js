@@ -3,7 +3,7 @@ import { Button } from '@/components/Button'
 import { Text } from '@/primitives/Text'
 import { Box } from '@/primitives/Box'
 
-const Highlight = styled.span`
+const HighlightedText = styled.span`
   display: inline-block;
   
   &:before {
@@ -22,16 +22,20 @@ const Highlight = styled.span`
     padding: 0px 3px 0px 5px;
   }
 `
+
+const Highlight = ({ children }) => (
+  <Box display='inline' position='relative'>
+    <HighlightedText>
+      {children}
+    </HighlightedText>
+  </Box>
+)
+
 export const TextSlider = () => {
   return (
     <>
       <Text as='h1' fontSize={6}>
-        Start{' '}
-        <Box display='inline' position='relative'>
-          <Highlight>
-            energy
-          </Highlight>
-        </Box> revolution from your community
+        Start <Highlight>energy</Highlight> revolution from your community
       </Text>
       <Button>Contact us</Button>
     </>
