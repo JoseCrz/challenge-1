@@ -34,6 +34,7 @@ const Highlight = ({ children }) => (
 )
 
 const Dot = styled.div`
+  cursor: pointer;
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -56,7 +57,7 @@ const DotSlider = () => {
 export const TextSlider = () => {
   return (
     <>
-      <GridLayout gridTemplateColumns='100px 1fr'>
+      <GridLayout gridTemplateColumns='auto 1fr' gridGap={4}>
         <GridItem>
           <Flex
             height='100%'
