@@ -57,24 +57,29 @@ const DotSlider = () => {
 export const TextSlider = () => {
   return (
     <>
-      <GridLayout gridTemplateColumns='auto 1fr' gridGap={4}>
-        <GridItem>
+      <Flex>
+        <Box>
           <Flex
             height='100%'
             flexDirection='column'
             justifyContent='flex-end'
             alignItems='center'
+            mr={4}
           >
             <DotSlider />
           </Flex>
-        </GridItem>
-        <GridItem>
+        </Box>
+        <Box>
           <Text as='h1' fontSize={6}>
             Start <Highlight>energy</Highlight> revolution from your community
           </Text>
           <Button>Contact us</Button>
-        </GridItem>
-      </GridLayout>
+        </Box>
+      </Flex>
+      <Text fontWeight='light' color='gray' fontSize={2} ml={4} mt={5}>
+        Sustainable technologies have been so affordable.
+        Produce and exchange energy maximizing the power of renewable sources.
+      </Text>
     </>
   )
 }

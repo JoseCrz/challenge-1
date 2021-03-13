@@ -10,24 +10,13 @@ export const Hero = () => {
       <GridLayout
         height='100%'
         gridTemplateColumns='1fr 1fr'
-        gridTemplateRows='1fr 1fr 1fr'
-        gridTemplateAreas={`
-        "title slider"
-        "title slider"
-        "copy slider"
-        `}
       >
-        <GridItem gridArea='title'>
+        <GridItem>
           <TextSlider />
+
         </GridItem>
-        <GridItem gridArea='slider'>
+        <GridItem>
           <ImageSlider />
-        </GridItem>
-        <GridItem gridArea='copy'>
-          <Text fontWeight='light' color='gray' fontSize={2}>
-            Sustainable technologies have been so affordable.
-            Produce and exchange energy maximizing the power of renewable sources.
-          </Text>
         </GridItem>
       </GridLayout>
     </Box>
