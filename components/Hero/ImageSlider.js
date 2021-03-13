@@ -9,12 +9,12 @@ const Button = styled.button`
   align-items: center;
   height: 35px;
   width: 35px;
-  margin: 0 ${({ theme }) => theme.space[1]}px;
+  margin: 0 ${({ theme }) => theme.space[1]};
   border: none;
   border-radius: 50%;
   background: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.fontSizes[4]}px;
+  font-size: ${({ theme }) => theme.fontSizes[4]};
 `
 export const ImageSlider = () => {
   return (

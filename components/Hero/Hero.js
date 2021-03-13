@@ -1,6 +1,7 @@
 import { Box } from '@/primitives/Box'
 import { GridLayout, GridItem } from '@/primitives/Grid'
 import { ImageSlider } from './ImageSlider'
+import { TextSlider } from './TextSlider'
 
 export const Hero = () => {
   return (
@@ -15,7 +16,9 @@ export const Hero = () => {
         "copy slider"
         `}
       >
-        <GridItem bg='red' gridArea='title' />
+        <GridItem gridArea='title'>
+          <TextSlider />
+        </GridItem>
         <GridItem gridArea='slider'>
           <ImageSlider />
         </GridItem>
